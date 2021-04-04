@@ -22,7 +22,9 @@ source ${HOME}/.zsh/aliases.sh  # alias
 export PATH="${HOME}/local/bin:$PATH"  # for commands built on local
 #source ${HOME}/.zsh/linuxbrew.zsh  # linuxbrew (on server only)
 source ${HOME}/.zsh/pyenv.sh  # pyenv
+source ${HOME}/.zsh/gvm.sh  # golang version manager
 #source ${HOME}/.zsh/golang.sh  # golang
+source ${HOME}/.zsh/zsh-kubectl-prompt.sh
 
 #[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
