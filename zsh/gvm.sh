@@ -1,1 +1,1 @@
-source /Users/yuyamada/.gvm/scripts/gvm
+source ${HOME}/.gvm/scripts/gvm
