@@ -54,3 +54,6 @@ alias accs='echo "abca" | acc s -s -- -w 0'
 
 # kubernetes
 alias k='kubectl'
+
+# terraform
+alias tf='terraform'
