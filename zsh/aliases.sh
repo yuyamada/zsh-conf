@@ -52,3 +52,8 @@ alias gr='go run'
 alias gojt='gollect >! gollect/main.go && oj t --gnu-time gtime -c "go run gollect/main.go"'
 alias accs='echo "abca" | acc s -s -- -w 0'
 
+# kubernetes
+alias k='kubectl'
+
+# terraform
+alias tf='terraform'
