@@ -29,8 +29,17 @@ source ${HOME}/.zsh/gvm.sh  # golang version manager
 source ${HOME}/.zsh-kubectl-prompt/kubectl.zsh
 source ${HOME}/.zsh/zsh-kubectl-prompt.sh
 source ~/.lgtm/lgtm.sh  # lgtm image generator
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+export LANG=en_US.utf-8
 
 #[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-echo "May a force be with you."
+# export MOB_TIMER_ROOM=foobar-ads
+export HOMEBREW_NO_AUTO_UPDATE=1
+export PATH=~/.nodebrew/current/bin:$PATH
+export PATH=~/.local/bin:$PATH
+export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
+eval "$(direnv hook zsh)"
+
+echo "May the force be with you."
