@@ -10,6 +10,7 @@ alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %
 alias gla='git log --graph --all --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative --decorate=full'
 alias gsw='git switch'
 alias grs='git restore'
+alias gf='git fetch'
 
 # less
 alias less='less -R'
@@ -94,3 +95,6 @@ function lgtm() {
 alias dc='docker-compose'
 
 alias bazel='bazelisk'
+
+# onelogin
+alias onelogin-aws-login='~/.pyenv/versions/3.6.15/bin/onelogin-aws-login'
