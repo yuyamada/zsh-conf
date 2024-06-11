@@ -38,7 +38,9 @@ export LANG=en_US.utf-8
 
 # export MOB_TIMER_ROOM=foobar-ads
 export HOMEBREW_NO_AUTO_UPDATE=1
-export PATH=~/.nodebrew/current/bin:$PATH
+# export PATH=~/.nodebrew/current/bin:$PATH
+export PATH=~/.nodenv/bin:$PATH
+eval "$(nodenv init -)"
 export PATH=~/.local/bin:$PATH
 
 # for mikan os
@@ -46,5 +48,10 @@ export PATH=/opt/homebrew/Cellar/llvm/15.0.2/bin:$PATH
 
 export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
 eval "$(direnv hook zsh)"
+
+# rye
+source "$HOME/.rye/env"
+# z
+. ~/z/z.sh
 
 echo "May the force be with you."

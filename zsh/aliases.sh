@@ -98,3 +98,11 @@ alias bazel='bazelisk'
 
 # onelogin
 alias onelogin-aws-login='~/.pyenv/versions/3.6.15/bin/onelogin-aws-login'
+
+# watch
+alias w='watch -n1 '
+
+# sql formatter
+alias sqlf='sql-formatter-cli'
+
+alias date='gdate'
