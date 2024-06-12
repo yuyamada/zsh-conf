@@ -13,10 +13,10 @@ fi
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 ## Icebergテーマに変更
-#export LS_COLORS="di=34:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg=36;40;07:tw=32;40;07:ow=33;40;07:"
-#if [ -n "$LS_COLORS" ]; then
-#    zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-#fi
+export LS_COLORS="di=34:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg=36;40;07:tw=32;40;07:ow=33;40;07:"
+if [ -n "$LS_COLORS" ]; then
+    zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+fi
 
 source ${HOME}/.zsh/zle.sh  # zle
 source ${HOME}/.zsh/aliases.sh  # alias
@@ -26,7 +26,7 @@ export PATH="${HOME}/local/bin:$PATH"  # for commands built on local
 source ${HOME}/.zsh/pyenv.sh  # pyenv
 source ${HOME}/.zsh/rbenv.sh  # rbenv
 source ${HOME}/.zsh/golang.sh  # golang
-source ${HOME}/.zsh/gvm.sh  # golang version manager
+# source ${HOME}/.zsh/gvm.sh  # golang version manager
 source ${HOME}/.zsh-kubectl-prompt/kubectl.zsh
 source ${HOME}/.zsh/zsh-kubectl-prompt.sh
 source ~/.lgtm/lgtm.sh  # lgtm image generator
