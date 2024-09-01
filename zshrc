@@ -23,12 +23,12 @@ source ${HOME}/.zsh/aliases.sh  # alias
 source ${HOME}/.zsh/nvim.sh  # alias
 export PATH="${HOME}/local/bin:$PATH"  # for commands built on local
 #source ${HOME}/.zsh/linuxbrew.zsh  # linuxbrew (on server only)
-source ${HOME}/.zsh/pyenv.sh  # pyenv
-source ${HOME}/.zsh/rbenv.sh  # rbenv
-source ${HOME}/.zsh/golang.sh  # golang
+# source ${HOME}/.zsh/pyenv.sh  # pyenv
+# source ${HOME}/.zsh/rbenv.sh  # rbenv
+# source ${HOME}/.zsh/golang.sh  # golang
 # source ${HOME}/.zsh/gvm.sh  # golang version manager
-source ${HOME}/.zsh-kubectl-prompt/kubectl.zsh
-source ${HOME}/.zsh/zsh-kubectl-prompt.sh
+# source ${HOME}/.zsh-kubectl-prompt/kubectl.zsh
+# source ${HOME}/.zsh/zsh-kubectl-prompt.sh
 source ~/.lgtm/lgtm.sh  # lgtm image generator
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
@@ -43,14 +43,11 @@ export PATH=~/.nodenv/bin:$PATH
 eval "$(nodenv init -)"
 export PATH=~/.local/bin:$PATH
 
-# for mikan os
-export PATH=/opt/homebrew/Cellar/llvm/15.0.2/bin:$PATH
-
 export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
 eval "$(direnv hook zsh)"
 
 # rye
-source "$HOME/.rye/env"
+# source "$HOME/.rye/env"
 # z
 . ~/z/z.sh
 
