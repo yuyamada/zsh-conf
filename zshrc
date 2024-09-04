@@ -28,9 +28,10 @@ export PATH="${HOME}/local/bin:$PATH"  # for commands built on local
 # source ${HOME}/.zsh/golang.sh  # golang
 # source ${HOME}/.zsh/gvm.sh  # golang version manager
 # source ${HOME}/.zsh-kubectl-prompt/kubectl.zsh
-# source ${HOME}/.zsh/zsh-kubectl-prompt.sh
-source ~/.lgtm/lgtm.sh  # lgtm image generator
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ${HOME}/.zsh/zsh-kubectl-prompt.sh
+source ${HOME}/.zsh/gcloud.sh
+source ${HOME}/.lgtm/lgtm.sh  # lgtm image generator
+source ${HOME}/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 export LANG=en_US.utf-8
 
