@@ -1,0 +1,6 @@
+[submodule "zsh/zsh-kubectl-prompt"]
+	path = zsh/zsh-kubectl-prompt
+	url = https://github.com/superbrothers/zsh-kubectl-prompt
+[submodule "zsh/zsh-autosuggestions"]
+	path = zsh/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
