@@ -10,7 +10,8 @@ alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %
 alias gla='git log --graph --all --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative --decorate=full'
 alias gsw='git switch'
 alias grs='git restore'
-alias gf='git fetch'
+alias gf='git fuzzy'
+alias gfs='git branch --list | cut -c 3- | fzf --preview "git log --pretty=format:\"%h %cd %s\" --date=format:\"%Y-%m-%d %H:%M\" {}" | xargs git switch'
 
 # less
 alias less='less -R'
