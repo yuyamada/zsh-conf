@@ -49,3 +49,12 @@ function peco-history-selection() {
 
 zle -N peco-history-selection
 bindkey '^R' peco-history-selection
+
+function fzf-history-selection() {
+    BUFFER=`history -n 1 | tac  | awk '!a[$0]++' | fzf-tmux -p --reverse --height 40%`
+    CURSOR=$#BUFFER
+    zle reset-prompt
+}
+
+zle -N fzf-history-selection
+bindkey '^F' fzf-history-selection
