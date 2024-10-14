@@ -12,6 +12,8 @@ alias gsw='git switch'
 alias grs='git restore'
 alias gf='git fetch'
 
+which git-cz > /dev/null && alias gcz='git-cz --disable-emoji'
+
 # less
 alias less='less -R'
 
