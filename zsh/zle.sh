@@ -34,27 +34,12 @@ bindkey -M viins '^d'  backward-delete-char
 bindkey -M viins '^m'  accept-line
 bindkey -M viins '^f'  accept-line
 
-# history補完
-function peco-history-selection() {
-  if test $(uname) = Linux ; then
-    BUFFER=`\\history -n 1 | tac | awk '!a[$0]++' | peco`
-  elif test $(uname) = Darwin ; then
-    BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
-  else
-    echo "unkown uname: $(uname)"
-  fi
-  CURSOR=$#BUFFER
-  zle reset-prompt
-}
-
-zle -N peco-history-selection
-bindkey '^R' peco-history-selection
-
-function fzf-history-selection() {
-    BUFFER=`history -n 1 | tac  | awk '!a[$0]++' | fzf-tmux -p --reverse --height 40%`
+function fuzzy-history-selection() {
+    # BUFFER=`history -n 1 | awk '!a[$0]++' | fzf-tmux --reverse -p --height 100%`
+    BUFFER=`history -n 1 | tac  | awk '!a[$0]++' | peco`
     CURSOR=$#BUFFER
     zle reset-prompt
 }
 
-zle -N fzf-history-selection
-bindkey '^F' fzf-history-selection
+zle -N fuzzy-history-selection
+bindkey '^R' fuzzy-history-selection
