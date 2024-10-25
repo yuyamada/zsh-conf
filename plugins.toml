@@ -22,6 +22,11 @@ use = ["init.zsh"]
 github = "zsh-users/zsh-autosuggestions"
 use = ["{{ name }}.zsh"]
 
+
+[plugins.z]
+github = "rupa/z"
+use = ["z.sh"]
+
 [plugins.zsh-kubectl-prompt]
 github = "superbrothers/zsh-kubectl-prompt"
 hooks.post = "autoload -U colors; colors; RPROMPT=$RPROMPT'%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'"
