@@ -9,14 +9,10 @@ alias gd='git diff'
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative --decorate=full'
 alias gla='git log --graph --all --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative --decorate=full'
 function git-switch-default() {
-  echo $#
   if [[ "$#" -eq 0 ]]; then
-    echo empty
     git switch $(git symbolic-ref refs/remotes/origin/HEAD | cut -f4 -d'/')
     return
   fi
-
-  echo hoge
   git switch $@
 }
 alias gsw='git-switch-default'
