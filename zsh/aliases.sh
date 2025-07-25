@@ -77,22 +77,22 @@ alias tf='terraform'
 alias imc='impbcopy -'
 alias imp='pngpaste -'
 function lgtm-convert() {
-  convert \
+  magick - \
     -resize 400x400 \
     -gravity center \
     -fill white \
     -stroke none \
     -strokewidth 20 \
-    -font /Library/Fonts/Aileron-Black.otf \
+    -font ~/Library/Fonts/Aileron-Black.otf \
     -pointsize 72 \
     -kerning 12 \
     -annotate +0+0 'LGTM' \
-    -font /Library/Fonts/Aileron-Regular.otf \
+    -font ~/Library/Fonts/Aileron-Regular.otf \
     -pointsize 11 \
     -fill white \
     -kerning 6 \
     -annotate +0+52 'Looks Good To Me' \
-    ${1:-"-"} -
+    -
 }
 function lgtm() {
   imp \
