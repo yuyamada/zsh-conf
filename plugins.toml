@@ -29,8 +29,11 @@ use = ["z.sh"]
 
 [plugins.zsh-kubectl-prompt]
 github = "superbrothers/zsh-kubectl-prompt"
-hooks.post = "autoload -U colors; colors; RPROMPT=$RPROMPT'%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'"
+hooks.post = "autoload -U colors; colors; RPROMPT='%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'$RPROMPT"
 
 [plugins.local]
 local = "~/.zsh"
 use = ["*.sh"]
+
+[plugins.starship]
+inline = 'eval "$(starship init zsh)"'

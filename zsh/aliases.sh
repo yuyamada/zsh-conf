@@ -116,3 +116,5 @@ alias w='watch -n1 '
 alias sqlf='sql-formatter-cli'
 
 alias date='gdate'
+
+alias rr=gh-revreq
